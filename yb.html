@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <img src="images/heart-light.png" alt="heart">
+                <h1>Pet Shelter</h1>
+                <h3>Find a Pet</h3>
+                <h3>About</h3>
+                <button onclick="hide(this)" class="donate">Donate</button>
+            </div>
+            <div class="looking">
+                <p class="space">I'm looking for a...</p>
+                <p>in or near...</p>
+            </div>
+            <div class="filter">
+                <img class="paw" src="images/paw-light.png" alt="paw">
+                <select class="pets" name="pets" id="pets">
+                    <option class="dog">Dog</option>
+                    <option class="cat" value="">Cat</option>
+                </select>
+                <img src="images/pin-light.png" alt="pin">
+                <input class="zip" type="text" placeholder="City or Zip code">
+                <button class="find">Find your new best friend</button>
+            </div>
+        </div>
+        <div class="body">
+            <div class="row" id="lighter">
+                <div class="pic">
+                    <img src="images/pepper.jpg" alt="pepper">
+                </div>
+                <div class="top">
+                    <h2>Pepper</h2>
+                    <div class="content">
+                        <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                    </div>
+                </div>
+                <div class="petting">
+                    <span class="likes" id="span-1">3 petting(s)</span>
+                    <button class="ppr-btn" onclick="like(0)">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pic">
+                    <img src="images/bruce.jpg" alt="bruce">
+                </div>
+                <div class="top">
+                    <h2>Bruce</h2>
+                    <div class="content">
+                        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                    </div>
+                </div>
+                <div class="petting">
+                    <span class="likes" id="span-2">5 petting(s)</span>
+                    <button class="ppr-btn" onclick="like(1)">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="row" id="lighter-2">
+                <div class="pic">
+                    <img src="images/oscar.jpg" alt="oscar">
+                </div>
+                <div class="top">
+                    <h2>Oscar</h2>
+                    <div class="content">
+                        <p>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+                    </div>
+                </div>
+                <div class="petting">
+                    <span class="likes" id="span-3">8 petting(s)</span>
+                    <button class="ppr-btn" onclick="like(2)">Pet Oscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
